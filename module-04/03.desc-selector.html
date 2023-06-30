@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 자손(decendant) 선택자 */
+      /* 부모선택자 자손선택자 자손... 자손.. */
+      /* header 태그 밑에 모든 h1들을 다 선택해 */
+      header h1 {
+        color: red;
+      }
+      section h1 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div: 최상위 부모(단군) -->
+    <!-- <div>
+      자식(단군의 직계)이면서 자손 
+      <h1></h1>
+      <h2></h2>
+      <ul>
+        자손(단군의.. 먼 핏줄)
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div> -->
+
+    <header>
+      <h1>Lorem, ipsum.</h1>
+      <nav>
+        <h1>Navigation</h1>
+      </nav>
+    </header>
+    <section>
+      <h1>Lorem, ipsum.</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat
+        provident in earum id corporis voluptas magni illum cumque animi
+        quibusdam fugit a totam laboriosam libero, ipsum nesciunt doloremque
+        dolores.
+      </p>
+    </section>
+  </body>
+</html>
