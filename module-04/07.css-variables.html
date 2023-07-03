@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css 변수(variables) */
+      /* 상수(constant)에 가깝다. */
+      /* :root {
+        --변수명: 값
+      } */
+      /* css 속성 값이 재사용된다. */
+      /* 주로 색상, 크기값 같은 것들 */
+      :root {
+        --main-color: #06d6a0;
+        --secondary-color: #1b9aaa;
+        --default-font-size: 14px;
+      }
+
+      /* 변수사용: */
+      html,
+      body {
+        font-size: var(--default-font-size);
+      }
+      body {
+        background-color: var(--main-color);
+      }
+      h1 {
+        color: var(--secondary-color);
+      }
+      p {
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eaque
+      assumenda cupiditate aspernatur, suscipit odit laboriosam nulla alias
+      neque quos et sequi ratione saepe earum. Cum ullam dicta nostrum
+      voluptatem.
+    </p>
+  </body>
+</html>
