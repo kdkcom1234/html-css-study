@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        /* 오른쪽 아래 흐림도(blur) 색상 */
+        /* 왼쪽 -px, 위로 -px */
+        /* 위로 -px */
+        text-shadow: -3px -3px 10px black;
+      }
+      div {
+        border: 1px solid black;
+        /* 오른쪽 아래 흐림도(blur) 색상 */
+        box-shadow: 10px 10px 30px black;
+        /* box-shadow: 10px 10px 10px black, 10px 10px 20px orange,
+          10px 10px 30px red; */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+          0px -4px 8px rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Lorem ipsum dolor sit.</h1>
+    </div>
+  </body>
+</html>
