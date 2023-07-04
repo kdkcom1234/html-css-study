@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        /* 자식에 absolute가 걸려있다. */
+        /* relative 부모에 높이 값을 줘야 함 */
+        /* 그렇지 않으면 다른 요소들의 배치가 틀어짐 */
+        position: relative;
+        border: 1px solid black;
+        height: 90px;
+      }
+      p {
+        position: absolute;
+        left: 50px;
+        top: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+        maxime mollitia nihil nisi quia obcaecati vel quae. Atque consequuntur
+        minima voluptas, quidem, sit laboriosam tenetur id officiis commodi
+        suscipit repellendus.
+      </p>
+    </div>
+    <h1>Lorem, ipsum dolor.</h1>
+  </body>
+</html>
