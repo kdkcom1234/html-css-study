@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* mobile-first 디자인/코딩을 해야합니다. */
+      /* 가장 작은 장치 먼저 */
+      /* 무조건 적용되는 부분 */
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      /* min-width: 크기값 */
+      /* 크기값보다 큰 장치에서 min-width 까지 */
+      /* 576px 이상일 때 적용(추가로) */
+      @media (min-width: 576px) {
+        nav ul {
+          flex-direction: row;
+          justify-content: space-evenly;
+          gap: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </nav>
+  </body>
+</html>
