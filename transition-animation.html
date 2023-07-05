@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes run {
+        to {
+          transform: translateX(400px) rotate(360deg);
+          background-color: orange;
+        }
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+      }
+
+      div:first-of-type {
+        transition: transform 1s;
+      }
+
+      div:first-of-type:hover {
+        transform: translateX(100px) rotate(90deg);
+      }
+
+      div:last-of-type {
+        background-color: yellow;
+        animation: run 3s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+</html>
