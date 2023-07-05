@@ -10,12 +10,13 @@
         border: 1px solid red;
         padding: 10px;
         margin: 20px;
+        flex-wrap: wrap;
       }
       .item {
         border: 1px solid black;
         text-align: center;
         /* flex: 1 -> flex: 1 1 auto; */
-        flex: 1;
+        width: 90px;
       }
       .start {
         /* 교차축 정렬 align-items */
@@ -40,6 +41,9 @@
   <body>
     <!-- 교차축(cross-axis) stretch가 default -->
     <div class="container gap-10" style="height: 100px">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
       <div class="item">1</div>
       <div class="item">2</div>
       <div class="item">3</div>
